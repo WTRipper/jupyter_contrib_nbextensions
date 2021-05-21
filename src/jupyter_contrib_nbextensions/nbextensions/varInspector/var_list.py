@@ -32,6 +32,7 @@ def _getshapeof(x):
 
 def _getcontentof(x):
     length = 150
+    content = ""
     if type(x).__name__ == 'DataFrame':
         colnames = ', '.join(x.columns.map(str))
         content = "Column names: %s" % colnames
